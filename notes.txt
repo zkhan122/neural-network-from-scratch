@@ -1,0 +1,18 @@
+rules for a node :
+
+1 Each node in a layer must connect to every single other node in the next layer using connections called weights.
+
+2 Every weight has a predetermined value that we choose randomly. We don’t know the values of nodes.
+
+3 Only the first layer of nodes starts out having values, usually called the input layer.
+
+4 Every other layer of nodes gets calculated based on the previous layer and weights connecting them.
+
+5 We apply biases to each node except for the nodes in the input layer.
+
+
+
+nodes: For a layer l, you represent the nodes for that layer as a column vector with dimensions n⁽ˡ⁾ × 1.
+biases: For a layer l (excluding the input layer) you represent the biases for that layer as a column vector with dimensions n⁽ˡ⁾ × 1, 
+since each node has its own bias.
+weights: The weights matrix connecting layer l-1 to layer l will have dimensions n^[l] x n^[l-1].
